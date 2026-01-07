@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+<body>
+    <nav class="blog-nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">{{ site.author.name }}</a>
+            <ul class="nav-links">
+                <li><a href="/">포트폴리오</a></li>
+                <li><a href="/blog/">블로그</a></li>
+                <li><a href="https://github.com/{{ site.author.github }}" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer class="blog-footer">
+        <p>&copy; 2025 {{ site.author.name }}. All rights reserved.</p>
+    </footer>
+</body>
+</html>
